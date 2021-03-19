@@ -19,7 +19,8 @@
     <p>覺得厲害</p>
     <a href="https://www.yahoo.com.tw"><img src="photo/IMG_7894.JPG" width="500" height="600"></a>
 	<h2>男大童</h2>
-	<table style="width:70%">
+	<p id="demo">
+	<table id="demo_table" style="display:none;">
 	  <tr>
 	    <th colspan="2" style="text-align:center;">size </th>
 	    <th style="text-align:center;">HEIGHT</th>
@@ -70,5 +71,13 @@
 	  </tr>
 
 	</table>
+	</p>
+	<script>
+	function myFunction() {
+	  document.getElementById("demo_table").style.display="table";       
+	}
+	</script>
+
+	<button type="button" onclick="myFunction()">觀看尺寸</button>
   </body>
 </html>
