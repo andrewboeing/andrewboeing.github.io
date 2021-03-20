@@ -74,19 +74,21 @@
 	</p>
 	<script>
 	function myFunction() {
-		var tab1=document.getElementById("demo_table").style.display="table"; 
+		var tab1=document.getElementById("demo_table");//.style.display="table"; 
 		//document.getElementById("demo_table").style.display="table"; 
 		tab1.style.display=(tab1.style.display=="none"?"":"none");      
 	}
 	</script>
 
 	<button type="button" onclick="myFunction()">觀看尺寸</button>
+	<br>
 	<select name="YourLocation">
 		　<option value="Taipei">台北</option>
 		　<option value="Taoyuan">桃園</option>
 		　<option value="Hsinchu">新竹</option>
 		　<option value="Miaoli">苗栗</option>
 	</select>
+	<br>
 	<a href="https://www.yahoo.com.tw"><img src="photo/IMG_7894.JPG" width="500" height="600"></a>
   </body>
 </html>
