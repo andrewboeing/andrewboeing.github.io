@@ -81,14 +81,18 @@
 	</script>
 
 	<button type="button" onclick="myFunction()">觀看尺寸</button>
+	
+	<script>
+		function print_picture() {
+			document.getElementById("result_picture").innerHTML = document.getElementById("number").value
+		}
+	</script>
 	<br>
-	<select name="YourLocation">
-		　<option value="Taipei">台北</option>
-		　<option value="Taoyuan">桃園</option>
-		　<option value="Hsinchu">新竹</option>
-		　<option value="Miaoli">苗栗</option>
+	<select name="picture">
+		　<option value="樂樂"><mg src="photo/IMG_7894.JPG" width="500" height="600"></option>
+		　<option value="竹竹"><mg src="photo/IMG_7280.JPG" width="500" height="600"></option>
 	</select>
 	<br>
-	<a href="https://www.yahoo.com.tw"><img src="photo/IMG_7894.JPG" width="500" height="600"></a>
+	<div id="result_picture"></div>
   </body>
 </html>
