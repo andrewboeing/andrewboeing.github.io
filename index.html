@@ -83,15 +83,22 @@
 	<button type="button" onclick="myFunction()">觀看尺寸</button>
 
 	<script>
-		function print_picture() {
-			document.getElementById("result_picture").innerHTML = document.getElementById("picture").value
+		function print_picture(sw) {
+			var pic;
+			  if (sw == 樂樂) {
+			    pic = "photo/IMG_7894.JPG"
+			  } else if(sw == 竹竹) {
+			    pic = "photo/IMG_7894.JPG"
+			  }
+			  document.getElementById("result_picture").innerHTML = pic;
+			//document.getElementById("result_picture").innerHTML = document.getElementById("picture").value
 		}
 	</script>
 	<br>
-	<select name="picture" id="picture" onchange="print_picture()";>
+	<select name="picture" id="picture" onchange="print_picture(value)";>
 		  <option value="請選擇">請選擇</option>
-		　<option value="photo/IMG_7894.JPG">樂樂</option>
-		　<option value="photo/IMG_7280.JPG">竹竹</option>
+		　<option value="樂樂">樂樂</option>
+		　<option value="竹竹">竹竹</option>
 	</select>
 	<br>
 	<div id="result_picture"></div>
