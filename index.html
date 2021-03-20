@@ -84,14 +84,14 @@
 
 	<script>
 		function print_picture() {
-			document.getElementById("result_picture").innerHTML = <img src="photo/IMG_7894.JPG" width="500" height="600">
+			document.getElementById("result_picture").innerHTML = document.getElementById("picture").value
 		}
 	</script>
 	<br>
 	<select name="picture" id="picture" onchange="print_picture()";>
 		  <option value="請選擇">請選擇</option>
-		　<option data-img-src="photo/IMG_7894.JPG">樂樂</option>
-		　<option data-img-src="photo/IMG_7280.JPG">竹竹</option>
+		　<option value="photo/IMG_7894.JPG">樂樂</option>
+		　<option value="photo/IMG_7280.JPG">竹竹</option>
 	</select>
 	<br>
 	<div id="result_picture"></div>
