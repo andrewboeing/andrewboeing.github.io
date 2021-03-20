@@ -18,11 +18,11 @@
     <h1>趙樂樂</h1>
     <p>覺得厲害</p>
     <script>
-		function print_picture(sw) {
+		function print_picture() {
 			var pic;
-			  if (sw == 樂樂) {
+			  if (document.getElementById("picture").value == 樂樂) {
 			    pic = "photo/IMG_7894.JPG"
-			  } else if(sw == 竹竹) {
+			  } else if(document.getElementById("picture").value == 竹竹) {
 			    pic = "photo/IMG_7894.JPG"
 			  }
 			  document.getElementById("result_picture").innerHTML = pic;
@@ -30,10 +30,10 @@
 		}
 	</script>
 	<br>
-	<select name="picture" id="picture">
+	<select name="picture" id="picture" onchange="print_value();">
 		  <option value="請選擇">請選擇</option>
-		　<option value="print_picture(樂樂)">樂樂</option>
-		　<option value="print_picture(竹竹)">竹竹</option>
+		　<option value="樂樂">樂樂</option>
+		　<option value="竹竹">竹竹</option>
 	</select>
 	<br>
 	<a href="https://www.yahoo.com.tw"><img id="result_picture" src="photo/IMG_7894.JPG" width="500" height="600"></a>
