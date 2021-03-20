@@ -20,9 +20,9 @@
     <script>
 		function print_picture() {
 			var pic;
-			  if (document.getElementById("picture").value == 0) {
+			  if (document.getElementById("picture").value == "0") {
 			    pic = "photo/IMG_7894.JPG"
-			  } else if(document.getElementById("picture").value == 1) {
+			  } else if(document.getElementById("picture").value == "1") {
 			    pic = "photo/IMG_7894.JPG"
 			  }
 			  document.getElementById("result_picture").src = pic;
@@ -32,8 +32,8 @@
 	<br>
 	<select name="picture" id="picture" onchange="print_value();">
 		  <option value="請選擇">請選擇</option>
-		　<option value=0>樂樂</option>
-		　<option value=1>竹竹</option>
+		　<option value="0">樂樂</option>
+		　<option value="1">竹竹</option>
 	</select>
 	<br>
 	<a href="https://www.yahoo.com.tw"></a>
