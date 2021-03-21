@@ -24,6 +24,8 @@
 			    pic = "photo/IMG_7894.JPG"
 			  } else if(sw== 1) {
 			    pic = "photo/IMG_7280.jpg"
+			  } else if(sw== -1) {
+			    pic = "photo/whoami.jpg"
 			  }
 			  document.getElementById("result_picture").src = pic;
 			//document.getElementById("result_picture").innerHTML = document.getElementById("picture").value
@@ -31,7 +33,7 @@
 	</script>
 	<br>
 	<select name="picture" id="picture" onchange="print_picture(value);">
-		  <option value="請選擇">請選擇</option>
+		  <option value="-1">請選擇</option>
 		　<option value="0">樂樂</option>
 		　<option value="1">竹竹</option>
 	</select>
