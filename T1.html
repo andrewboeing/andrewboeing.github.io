@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welecom to 33lady</title>
+    <style>
+		table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		}
+		th, td {
+		padding: 5px;
+		text-align: left;    
+	}
+	</style>
+  </head>
+  <body>
+    <h1>趙樂樂</h1>
+    <p>覺得厲害</p>
+    <script>
+		function print_picture(sw) {
+			var pic;
+			  if (sw== 0) {
+			    pic = "photo/IMG_7894.JPG"
+			  } else if(sw== 1) {
+			    pic = "photo/IMG_7280.jpg"
+			  } else if(sw== -1) {
+			    pic = "photo/whoami.jpg"
+			  }
+			  document.getElementById("result_picture").src = pic;
+			//document.getElementById("result_picture").innerHTML = document.getElementById("picture").value
+		}
+	</script>
+	<br>
+	<select name="picture" id="picture" onchange="print_picture(value);">
+		  <option value="-1">請選擇</option>
+		　<option value="0">樂樂</option>
+		　<option value="1">竹竹</option>
+	</select>
+	<br>
+	<a href="https://www.yahoo.com.tw"></a>
+	<img id="result_picture" src="photo/whoami.jpg" width="500" height="600">
+
+	<h2>男大童</h2>
+	<p id="demo">
+	<table id="demo_table" style="display:none;">
+	  <tr>
+	    <th colspan="2" style="text-align:center;">size </th>
+	    <th style="text-align:center;">HEIGHT</th>
+	    <th style="text-align:center;">WEIGHT</th>
+	    <th style="text-align:center;">WAIST</th>
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>S</strong></td>
+	    <td style="text-align:center;"><strong>8</strong></td>
+	    <td style="text-align:center;">136~138 cm</td>
+	    <td style="text-align:center;">25~28 kg</td>
+	    <td style="text-align:center;">58 cm</td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>M</strong></td>
+	    <td style="text-align:center;"><strong>10<br> 12</strong></td>
+	    <td style="text-align:center;">140~142 cm<br> 144~149 cm</td>
+	    <td style="text-align:center;">28~33 kg<br> 33~39 kg</td>
+	    <td style="text-align:center;">61 cm<br> 64 cm</td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>L</strong></td>
+	    <td style="text-align:center;"><strong>14<br> 16</strong></td>
+	    <td style="text-align:center;">150~155 cm<br> 156~161 cm</td>
+	    <td style="text-align:center;">40~45 kg<br> 46~52 kg</td>
+	    <td style="text-align:center;">66 cm<br> 69 cm</td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>XL</strong></td>
+	    <td style="text-align:center;"><strong>10<br> 12</strong></td>
+	    <td style="text-align:center;">140~142 cm<br> 144~149 cm</td>
+	    <td style="text-align:center;">28~33 kg<br> 33~39 kg</td>
+	    <td style="text-align:center;">61 cm<br> 64 cm</td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>S/M</strong></td>
+	    <td style="text-align:center;"><strong>S/M</strong></td>
+	    <td style="text-align:center;">136~149 cm</td>
+	    <td style="text-align:center;">25~39 kg</td>
+	    <td style="text-align:center;">58~64 cm</td>
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>L/XL</strong></td>
+	    <td style="text-align:center;"><strong>L/XL</strong></td>
+	    <td style="text-align:center;">150~174 cm</td>
+	    <td style="text-align:center;">40~62 kg</td>
+	    <td style="text-align:center;">66~74 cm</td>
+	  </tr>
+
+	</table>
+	</p>
+	<script>
+	function myFunction() {
+		var tab1=document.getElementById("demo_table");//.style.display="table"; 
+		//document.getElementById("demo_table").style.display="table"; 
+		tab1.style.display=(tab1.style.display=="none"?"":"none");      
+	}
+	</script>
+
+	<button type="button" onclick="myFunction()">觀看尺寸</button>
+
+	
+	
+  </body>
+</html>
